@@ -1,5 +1,5 @@
 {
-  "name": "google-applications",
+  "name": "dsep-applications",
   "version": "1.0.0",
   "description": "A webapp to consolidate DSEP applications",
   "main": "app.js",
