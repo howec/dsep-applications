@@ -1,5 +1,5 @@
 var GoogleSpreadsheet = require('google-spreadsheet');
-var creds = require('./GitIgnore/client_secret.json');
+var creds = require('./GitIgnore/apis_backend_client_secret.json');
 
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
 var doc = new GoogleSpreadsheet('1oDulgNWoAIK3oaR8xyiLMyksooe0Qe-44HBi1WIL0BE');
