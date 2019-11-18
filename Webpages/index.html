@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 	<head>
 		<h1>HEAD TEST</h1>
 
@@ -26,7 +25,25 @@
 	<footer>
 		<h3>footer test</h3>
 
+		<button id="test">Click here</button>
+
 	</footer>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	  var socket = io();
+
+	  console.log('before the emission');
+	  socket.emit('test', {testing: "0000"});
+
+	  socket.on("sendingattempt", function(data){
+	  	console.log(data.attempt);
+	  });
+
+	// const button = document.getElementByID("test");
+	// button
+
+	</script>
 
 </html>
 
